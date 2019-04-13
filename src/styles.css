@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font: normal 14px/22px Open Sans, Trebuchet MS, Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.container {
+  margin-top: 10px;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-center {
+  text-align: center;
+}
+.columns {
+  margin: 0;
+}
+.badge {
+  position: relative;
+}
+.badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  font-size: 0.7em;
+  background: #ffffff;
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333;
+}
+.border-bottom-marvel {
+  border-bottom: 1px solid #ec1d24;
+}
+.tabs li.is-active a {
+  border-bottom-color: #ec1d24;
+  color: #ec1d24;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #ec1d24 transparent #ec1d24 transparent;
+  animation: lds-hourglass 1.2s infinite;
+  position: fixed;
+  left: calc(50vw - 32px);
+  top: calc(50vh - 32px);
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.button-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.button.is-danger {
+  background-color: #ec1d24;
+}
+
+.button.is-danger.is-active, .button.is-danger:active, .button.is-danger:hover {
+  background-color: #ffffff;
+  border-color: transparent;
+  color: #000000;
+}
