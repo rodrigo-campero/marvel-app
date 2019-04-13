@@ -26,7 +26,7 @@ import { ToastrModule } from 'ng6-toastr-notifications';
     CartModule,
     ToastrModule.forRoot()
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/marvel-app/' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
